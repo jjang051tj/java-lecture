@@ -14,7 +14,7 @@ public class ColorPoint extends Point {
         // 이떄 만약 부모에 생성자가 없으면 자동으로 빈생성자를 만들어 주기때문에 super() 호출이 가능하다.
         // 만약 부모 생성자에 임의의 생성자가 만들어져 있으면 빈 생성자는 만들어지지 않으므로
         // 형식에 맞는 부모 함수를 호출해서 써야 한다.
-        super(0,0);
+        //super();
     }
 
     public ColorPoint(int x, int y, String color) {
