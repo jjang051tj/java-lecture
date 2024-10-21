@@ -12,6 +12,19 @@ class Point {
     public String toString() {
         return "Point(" + x + "," + y + ")";
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        // point의 같다 다르다를 바꾸고 싶다.
+        // 좌표가 같으면 같은걸로 바꾸고 싶다.
+        //return super.equals(obj);
+        //형변환 type casting upcastring / downcasting
+        Point point = (Point)obj;
+        if(x==point.x && y==point.y) {
+            return true;
+        }
+        return false;
+    }
 }
 
 public class ObjectTest {
@@ -40,6 +53,10 @@ public class ObjectTest {
         } else {
             System.out.println("point는 point03와 다르다");
         }
-
+        if(point.equals(point02)) {
+            System.out.println("point는 point02와 같다");
+        } else {
+            System.out.println("point는 point02와 다르다");
+        }
     }
 }
