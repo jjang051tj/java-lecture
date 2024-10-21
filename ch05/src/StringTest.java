@@ -40,7 +40,6 @@ public class StringTest {
         System.out.println("sb java"+sb.hashCode()+"==="+sb.toString());
         // 상수 사용할때는 String 불변객체 (내용이 바뀌면 메모리 주소값이 바뀐다.)
         // 묹열이 자주 바뀐다 StringBuffer를 사용한다.  가변객체(메모리에 주소값은 같으면서 길이는 바꿀 수 있다.)
-
         //java안에는 garbage collection
 
     }
