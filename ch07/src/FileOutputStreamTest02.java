@@ -26,7 +26,7 @@ public class FileOutputStreamTest02 {
             byte readBytes[] = fileInputStream.readAllBytes(); //0부터 싹다 읽어오기...
             System.out.println(Arrays.toString(readBytes));
 
-
+            //buffer==container
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
