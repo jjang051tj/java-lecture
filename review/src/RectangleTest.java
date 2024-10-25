@@ -12,11 +12,19 @@ public class RectangleTest {
         System.out.println("============");
         //oop
         Rectangle myRect = new Rectangle();
+        //속성의 값을 직접 대입하는건 지양한다.
         myRect.width=5;
         myRect.height=5;
         System.out.println(myRect.calcPerimeter());
         System.out.println(myRect.calcArea());
         System.out.println(myRect.isSquare()?"정사각형":"직사각형");
+
+
+        Rectangle myRect02 = new Rectangle(10,10);
+        System.out.println(myRect02.calcPerimeter());
+        System.out.println(myRect02.calcArea());
+        System.out.println(myRect02.isSquare()?"정사각형":"직사각형");
+
     }
     static int calcPerimeter(int width,int height) {
         return width*2+height*2;
