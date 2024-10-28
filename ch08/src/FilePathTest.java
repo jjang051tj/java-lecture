@@ -36,8 +36,6 @@ public class FilePathTest {
             for(Path p:pathList) {
                 System.out.println(Files.isRegularFile(p)?p.getFileName()+" : file":p.getFileName()+" : folder");
             }
-
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
