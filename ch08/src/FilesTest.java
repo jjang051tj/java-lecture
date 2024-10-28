@@ -31,7 +31,6 @@ public class FilesTest {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         //client에서 파일을 전달받고 서버 외부에 저장하는 것이 어려움...
         Path newFile = Paths.get("temp02/newExample.txt");
         try {
@@ -39,7 +38,5 @@ public class FilesTest {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 }
