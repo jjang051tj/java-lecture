@@ -3,6 +3,8 @@ import java.io.IOException;
 
 public class FileTest {
     public static void main(String[] args) {
+
+        //예전에 이렇게 했음...  legacy code
         //자바에서 파일 만들기..
         //폴더 만들기.
         File file = new File("temp/example.txt");
